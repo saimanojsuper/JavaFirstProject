@@ -5,8 +5,10 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>publicis_sapient_week1</groupId>
-  <artifactId>publicis_sapient_week1</artifactId>
+
+    <groupId>com.sapient</groupId>
+    <artifactId>java-project</artifactId>
+   
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   
