@@ -1,0 +1,89 @@
+
+<html>
+
+<script>
+function table(){
+ var tab_num =document.getElementById("tab_num").value;
+ 
+
+ for(var i=1;i<11;i++){
+ document.getElementById("col"+i).innerHTML=tab_num;
+ document.getElementById("col"+i+i).innerHTML="x "+i;
+ var num= i*tab_num;
+ document.getElementById("col"+i+i+i).innerHTML=num;
+ }
+
+ 
+ }
+
+</script>
+
+  <h3>Table generation</h3>
+  <body>
+  <input type="text" name="Table required" id="tab_num">
+  <input type="submit" value="submit" onclick="table()">
+  <table border="1">
+   <tr>
+     <th>Number</th>
+     <th>Multplied by</th>
+     <th>Value</th>
+   </tr>
+   <tr>
+     <td id="col1"></td>
+     <td id="col11"></td>
+     <td id="col111"></td>
+   </tr>
+   <tr>
+    <td id="col2"></td>
+    <td id="col22"></td>
+    <td id="col222"></td>
+  </tr>
+  <tr>
+    <td id="col3"></td>
+    <td id="col33"></td>
+    <td id="col333"></td>
+  </tr>
+  <tr>
+    <td id="col4"></td>
+    <td id="col44"></td>
+    <td id="col444"></td>
+  </tr>
+  <tr>
+    <td id="col5"></td>
+    <td id="col55"></td>
+    <td id="col555"></td>
+  </tr>
+  <tr>
+    <td id="col6"></td>
+    <td id="col66"></td>
+    <td id="col666"></td>
+  </tr>
+  <tr>
+    <td id="col7"></td>
+    <td id="col77"></td>
+    <td id="col777"></td>
+  </tr>
+  <tr>
+    <td id="col8"></td>
+    <td id="col88"></td>
+    <td id="col888"></td>
+  </tr>
+  <tr>
+    <td id="col9"></td>
+    <td id="col99"></td>
+    <td id="col999"></td>
+  </tr>
+  <tr>
+    <td id="col10"></td>
+    <td id="col1010"></td>
+    <td id="col101010"></td>
+  </tr>
+
+
+  </table>
+  <a href="home.html" >Home</a>
+
+  </body>
+
+
+    </html>
