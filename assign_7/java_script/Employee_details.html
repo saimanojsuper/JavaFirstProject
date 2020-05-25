@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Search Employee Details by Employee Name</h2>
+
+
+<script>
+
+var data = [  
+   {  
+      "id":"1",
+      "employee_name":"Tiger Nixon",
+      "employee_salary":"320800",
+      "employee_age":"61",
+      "profile_image":"default_profile.png"
+   },
+   {  
+      "id":"2",
+      "employee_name":"Garrett Winters",
+      "employee_salary":"434343",
+      "employee_age":"63",
+      "profile_image":"default_profile.png"
+   },
+   {  
+      "id":"3",
+      "employee_name":"Ashton Cox",
+      "employee_salary":"86000",
+      "employee_age":"66",
+      "profile_image":"default_profile.png"
+   },
+   {  
+      "id":"4",
+      "employee_name":"Cedric Kelly",
+      "employee_salary":"433060",
+      "employee_age":"22",
+      "profile_image":"default_profile.png"
+   }
+];
+
+
+function search(){
+   // alert(document.getElementById("search").value);
+var myJSON = JSON.stringify(data);
+
+//var searchField = "employee_name";
+var searchVal = document.getElementById("search").value;
+var results=[];
+
+
+for(x in data){
+    //alert(data[x].employee_name);
+    if (data[x].employee_name == "Tiger Nixon") {
+        results.push(data[x].id);
+        results.push(data[x].employee_name);
+        results.push(data[x].employee_age);
+        results.push(data[x].employee_salary);
+
+    }
+
+}
+
+document.getElementById("results").innerHTML =  results[0];
+document.getElementById("result1").innerHTML =  results[1];
+document.getElementById("result2").innerHTML =  results[2];
+document.getElementById("result3").innerHTML =  results[3];
+
+}
+
+
+</script>
+Enter the Employee name to be searched : <input type="text" id="search" /><br>
+</br>
+
+<input type="button"  value="search" onClick="search()">
+
+</form>
+<p align="center">The Employee Details are : <br>
+
+</br> 
+  
+<table align = "center"
+        id="table" border="1"> 
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Age </th>
+            <th>Employee Salary</th>
+          </tr>
+          <tr>
+            <td id="results"></td>
+            <td id="result1"></td>
+            <td id="result2"></td>
+            <td id="result3"></td>
+          </tr>
+</table> 
+
+
+</body>
+</html>
+
+
